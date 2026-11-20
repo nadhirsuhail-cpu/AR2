@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KATA+ AR — Misi Kata Adjektif | Bahasa Melayu Tahun 3</title>
+<meta name="description" content="Aplikasi pembelajaran interaktif kata adjektif untuk murid Tahun 3 — KSSR Bahasa Melayu, Standard Kandungan 5.1, Standard Pembelajaran 5.1.3. Kenali, gerakkan, pilih dan kuasai kata adjektif jarak, perasaan dan pancaindera.">
+<meta name="theme-color" content="#f6f7f4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+/* Pengumpul ralat — untuk pengesanan isu semasa pembangunan */
+window.__errs = [];
+window.addEventListener('error', function (e) {
+  window.__errs.push(String(e.message) + ' @ ' + (e.filename || '').split('/').pop() + ':' + e.lineno);
+  if (window.__errs.length > 30) window.__errs.shift();
+});
+window.addEventListener('unhandledrejection', function (e) {
+  window.__errs.push('promise: ' + String(e.reason && e.reason.message || e.reason));
+  if (window.__errs.length > 30) window.__errs.shift();
+});
+</script>
+</head>
+<body>
+<a class="langkau" href="#utama">Langkau ke kandungan utama</a>
+
+<!-- SPLASH -->
+<div id="splash" role="status" aria-label="Memuatkan KATA+ AR">
+  <div class="splash-dalam">
+    <div class="splash-tanda">KATA+ <span>AR</span></div>
+    <div class="splash-sub">Misi Kata Adjektif</div>
+    <div class="splash-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- KEPALA -->
+<header id="kepala">
+  <div class="kepala-dalam">
+    <a class="logo" href="#/" aria-label="KATA+ AR — ke halaman utama">
+      <span class="logo-tanda">KATA+ <em>AR</em></span>
+      <span class="logo-sub">Misi Kata Adjektif</span>
+    </a>
+    <nav class="nav-atas" aria-label="Navigasi utama">
+      <a href="#/" data-nav="home" class="nav-link">Home</a>
+      <a href="#/belajar" data-nav="belajar" class="nav-link">Belajar</a>
+      <a href="#/misi" data-nav="misi" class="nav-link">Misi</a>
+      <a href="#/ar" data-nav="ar" class="nav-link">AR</a>
+      <a href="#/skor" data-nav="skor" class="nav-link">Skor</a>
+    </nav>
+    <div class="kepala-aksi">
+      <span class="cip-xp" id="cipXp" title="Mata pengalaman">
+        <svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span id="teksXp">0 XP</span>
+      </span>
+      <button class="btn-iko" id="btnBunyi" aria-label="Bunyi: hidup" aria-pressed="true" title="Bunyi">
+        <svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+      </button>
+      <button class="btn-iko" id="btnA11y" aria-label="Pilihan kebolehcapaian" aria-haspopup="true" title="Kebolehcapaian">
+        <svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><text x="6" y="16.5" font-size="11" font-weight="800" fill="currentColor" stroke="none" font-family="sans-serif">Aa</text></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- KANDUNGAN -->
+<main id="utama" tabindex="-1">
+  <section id="view" aria-live="off"></section>
+</main>
+
+<!-- NAV BAWAH (mudah alih) -->
+<nav id="navbawah" aria-label="Navigasi mudah alih">
+  <a href="#/" data-nav="home"><svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Home</span></a>
+  <a href="#/belajar" data-nav="belajar"><svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>Belajar</span></a>
+  <a href="#/misi" data-nav="misi"><svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><span>Misi</span></a>
+  <a href="#/ar" data-nav="ar"><svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg><span>AR</span></a>
+  <a href="#/skor" data-nav="skor"><svg class="iko" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg><span>Skor</span></a>
+</nav>
+
+<!-- TOAST -->
+<div id="toast-zone" aria-live="polite" aria-atomic="false"></div>
+
+<!-- DIALOG GENERIK -->
+<dialog id="modal" class="modal">
+  <div class="modal-dalam" id="modalIsi"></div>
+</dialog>
+
+<!-- ONBOARDING -->
+<div id="onboard" hidden></div>
+
+<!-- POPOVER A11Y -->
+<div id="popA11y" class="pop-a11y" hidden></div>
+
+<!-- KONFETI -->
+<div id="konfeti" aria-hidden="true"></div>
+
+<noscript>
+  <div style="padding:24px;font-family:sans-serif;text-align:center">
+    Aplikasi ini memerlukan JavaScript. Sila aktifkan JavaScript dalam pelayar anda.
+  </div>
+</noscript>
+
+<script src="js/icons.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/screens.js"></script>
+<script src="js/modules.js"></script>
+<script src="js/activities.js"></script>
+<script src="js/ar.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/adventure.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
